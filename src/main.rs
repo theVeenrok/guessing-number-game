@@ -26,7 +26,7 @@ fn main() {
             .read_line(&mut user_input)
             .expect("Failed to read line.");
 
-        let mut user_number: u8 = user_input.trim().parse().expect(
+        let user_number: u8 = user_input.trim().parse().expect(
             "Please type a number in the range from {MIN_SECRET_NUMBER} to {MAX_SECRET_NUMBER}!",
         );
 
